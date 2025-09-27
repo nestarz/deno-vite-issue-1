@@ -1,0 +1,42 @@
+{
+  "tasks": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "deno run -A --env .output/server/index.mjs"
+  },
+  "imports": {
+    "@analogjs/vite-plugin-nitro": "npm:@analogjs/vite-plugin-nitro@^1.21.1",
+    "@bureaudouble/deno-vite-plugin": "jsr:@bureaudouble/deno-vite-plugin@0.0.1-alpha.1",
+    "@bureaudouble/react-search-parameter-controller": "jsr:@bureaudouble/react-search-parameter-controller@^0.0.2",
+    "@hono/vite-dev-server": "npm:@hono/vite-dev-server@^0.21.1",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^5.0.4",
+    "react": "npm:react@^19.1.1",
+    "react-dom": "npm:react-dom@^19.1.1",
+    "vite": "npm:vite@^7.1.6",
+    "@base-ui-components/react": "npm:@base-ui-components/react@1.0.0-beta.3"
+  },
+  "nodeModulesDir": "auto",
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.asynciterable",
+      "dom.iterable",
+      "deno.ns"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "jsxImportSourceTypes": "@types/react",
+    "types": [
+      "vite/client",
+      "@vitejs/plugin-rsc/types"
+    ],
+    "erasableSyntaxOnly": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "moduleResolution": "Bundler",
+    "module": "ESNext"
+  }
+}
