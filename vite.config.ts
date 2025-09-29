@@ -15,4 +15,11 @@ export default defineConfig({
       },
     }),
   ],
+  environments: {
+    ssr: {
+      resolve: {
+        noExternal: true,
+      },
+    },
+  },
 });
